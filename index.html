@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Project-focused portfolio for Greyson Alegria, a Computer Science student at Appalachian State University.">
+  <title>Greyson Alegria | Computer Science Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Greyson Alegria home">GA</a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-band">
+      <div class="hero-content">
+        <p class="eyebrow">Appalachian State University • Expected May 2027</p>
+        <h1>Greyson Alegria</h1>
+        <p class="hero-title">Computer Science Student</p>
+        <p class="hero-intro">I’m a Computer Science student at Appalachian State University interested in building practical software with databases, APIs, and user-focused design.</p>
+        <div class="hero-actions" aria-label="Primary links">
+          <!-- TODO: Replace # with your resume file path, such as assets/Greyson-Alegria-Resume.pdf -->
+          <a class="button primary" href="#" target="_blank" rel="noreferrer">Resume</a>
+          <!-- TODO: Replace # with your GitHub profile URL -->
+          <a class="button" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          <!-- TODO: Replace # with your LinkedIn profile URL -->
+          <a class="button" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="button" href="mailto:thegreysonj@gmail.com">Contact</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Student profile details">
+        <div>
+          <span class="panel-label">GPA</span>
+          <strong>3.48</strong>
+        </div>
+        <div>
+          <span class="panel-label">Focus</span>
+          <strong>Databases, APIs, UI/UX</strong>
+        </div>
+        <div>
+          <span class="panel-label">Location</span>
+          <strong>Boone, NC | Mooresville, NC</strong>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Work</p>
+        <h2>Projects</h2>
+        <p>Applied software projects with practical use cases, technical breadth, and clear product thinking.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="screenshot-placeholder">
+            <span>Appraisal App Screenshot</span>
+          </div>
+          <div class="project-body">
+            <div class="project-topline">
+              <h3>Second-Hand Item Appraisal App</h3>
+              <span class="status">Complete, Not Deployed</span>
+            </div>
+            <p>A complete app designed to help second-hand retail staff identify and appraise donated inventory. It uses Google Cloud Vision API for image-based item recognition, eBay API for product/pricing information, and Firebase for item records.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li>Firebase</li>
+              <li>Google Cloud Vision API</li>
+              <li>eBay API</li>
+              <li>SQL concepts</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="screenshot-placeholder cafe">
+            <span>Cafe Website Screenshot</span>
+          </div>
+          <div class="project-body">
+            <div class="project-topline">
+              <h3>Dulcet & Delish Cafe Website</h3>
+              <span class="status">Built, Not Deployed</span>
+            </div>
+            <p>A website built for Dulcet & Delish Cafe to present restaurant information, menu content, and brand identity in a clear digital format.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="screenshot-placeholder game">
+            <span>Game Screenshot</span>
+          </div>
+          <div class="project-body">
+            <div class="project-topline">
+              <h3>Godot Video Game</h3>
+              <span class="status">Complete/Prototype</span>
+            </div>
+            <p>A video game created in Godot using original animations and custom visual assets, with gameplay systems like movement, collision, interactions, and game logic.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li>Godot</li>
+              <li>GDScript</li>
+              <li>Original animations</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="screenshot-placeholder coffee">
+            <span>Coffee App Screenshot</span>
+          </div>
+          <div class="project-body">
+            <div class="project-topline">
+              <h3>Local Coffee App</h3>
+              <span class="status">In Progress</span>
+            </div>
+            <p>A local coffee review app based on user reviews and a 3-bean rating system.</p>
+            <ul class="tag-list" aria-label="Technologies">
+              <li>Reviews</li>
+              <li>Ratings</li>
+              <li>Product design</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section muted" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Technical Toolkit</p>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <p>Java, C, Haskell, JavaScript, Swift</p>
+        </div>
+        <div class="skill-group">
+          <h3>Web</h3>
+          <p>HTML, CSS, JavaScript</p>
+        </div>
+        <div class="skill-group">
+          <h3>Databases/APIs</h3>
+          <p>SQL, Firebase, Google Cloud Vision API, eBay API</p>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <p>Git, VS Code, Xcode, Godot</p>
+        </div>
+        <div class="skill-group wide">
+          <h3>Concepts</h3>
+          <p>Data Structures, OOP, API Integration, Database Design, SDLC, UI/UX</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section split" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Building practical software with a product mindset.</h2>
+      </div>
+      <div class="about-copy">
+        <p>I’m a Computer Science student at Appalachian State University, expected to graduate in May 2027. My strongest interests are projects that connect real user needs with reliable technical systems, especially databases, API integrations, and interfaces that make workflows easier.</p>
+        <p>Across my coursework and personal projects, I’ve worked with object-oriented programming, data structures, web development, cloud-backed app concepts, and game development. I’m currently looking for internship opportunities where I can contribute, learn quickly, and keep improving as a software developer.</p>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s connect.</h2>
+        <p>I’m open to software engineering, web development, and technology internship opportunities.</p>
+      </div>
+      <div class="contact-card">
+        <a href="mailto:thegreysonj@gmail.com">thegreysonj@gmail.com</a>
+        <a href="tel:+17046547799">704-654-7799</a>
+        <span>Boone, NC | Mooresville, NC</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Greyson Alegria. Built with HTML, CSS, and JavaScript.</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
