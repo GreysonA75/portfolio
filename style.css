@@ -310,16 +310,15 @@ h3 {
 .project-screenshot {
   display: block;
   width: 100%;
-  height: auto;
-  aspect-ratio: 2880 / 1694;
+  height: 330px;
   padding: 14px;
   object-fit: contain;
-  object-position: top center;
+  object-position: center;
   background: #eef4f8;
 }
 
 .featured-screenshot {
-  min-height: 0;
+  height: 460px;
 }
 
 .project-body {
@@ -661,7 +660,7 @@ h3 {
   }
 
   .featured-screenshot {
-    min-height: 360px;
+    height: 420px;
   }
 }
 
@@ -750,7 +749,12 @@ h3 {
   }
 
   .project-screenshot {
+    height: 260px;
     padding: 10px;
+  }
+
+  .featured-screenshot {
+    height: 320px;
   }
 
 }
