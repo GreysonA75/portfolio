@@ -308,17 +308,24 @@ h3 {
 }
 
 .project-screenshot {
-  display: block;
   width: 100%;
-  height: 330px;
-  padding: 14px;
-  object-fit: contain;
-  object-position: center;
+  min-height: 380px;
   background: #eef4f8;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .featured-screenshot {
-  height: 460px;
+  min-height: 560px;
+}
+
+.reappraise-screenshot {
+  background-image: url("assets/ra.jpg");
+}
+
+.dulcet-screenshot {
+  background-image: url("assets/dd.jpg");
 }
 
 .project-body {
@@ -660,7 +667,7 @@ h3 {
   }
 
   .featured-screenshot {
-    height: 420px;
+    min-height: 520px;
   }
 }
 
@@ -749,12 +756,11 @@ h3 {
   }
 
   .project-screenshot {
-    height: 260px;
-    padding: 10px;
+    min-height: 250px;
   }
 
   .featured-screenshot {
-    height: 320px;
+    min-height: 360px;
   }
 
 }
