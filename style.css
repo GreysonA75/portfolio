@@ -681,6 +681,39 @@ h3 {
   font-weight: 800;
 }
 
+.resume-page {
+  min-height: 100vh;
+  background: var(--light);
+}
+
+.resume-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 6vw;
+  background: var(--navy);
+  border-bottom: 1px solid var(--line);
+}
+
+.resume-main {
+  display: grid;
+  place-items: start center;
+  min-height: calc(100vh - 81px);
+  padding: 36px 5vw;
+}
+
+.resume-image {
+  display: block;
+  width: min(100%, 900px);
+  height: auto;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid #dce5ee;
+  border-radius: 8px;
+  box-shadow: 0 18px 48px rgba(18, 32, 51, 0.16);
+}
+
 @media (max-width: 920px) {
   .hero,
   .project-card.featured,
