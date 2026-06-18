@@ -63,12 +63,12 @@
       <div class="section-heading">
         <p class="eyebrow">Featured Work</p>
         <h2>Featured Projects</h2>
-        <p>Applied software projects with practical use cases, technical breadth, and clear product thinking.</p>
+        <p>Concise software projects focused on practical workflows, clear interfaces, and technical execution.</p>
       </div>
 
       <div class="project-grid">
         <article class="project-card featured">
-          <div class="project-visual app-visual" aria-label="ReAppraise iOS app preview">
+          <div class="project-visual app-visual" role="img" aria-label="ReAppraise iOS app preview">
             <div class="phone-shell">
               <div class="phone-status">
                 <span></span>
@@ -93,17 +93,14 @@
               <h3>ReAppraise</h3>
               <span class="status">Prototype</span>
             </div>
-            <p>A SwiftUI iOS prototype that estimates resale or donation value from an item photo using image hints, searchable comparable listings, and condition-based pricing.</p>
-            <dl class="project-facts" aria-label="Project facts">
-              <div>
-                <dt>Role</dt>
-                <dd>iOS interface, image picker integration, callable-function wrappers, pricing logic</dd>
-              </div>
-              <div>
-                <dt>Focus</dt>
-                <dd>Photo-based valuation, query cleaning, comparable listings, estimate ranges</dd>
-              </div>
-            </dl>
+            <p class="project-tagline">Photo-based resale and donation value estimator for iOS.</p>
+            <p>A SwiftUI prototype that turns an item photo into a cleaner search query, comparable listing results, and a condition-adjusted price range.</p>
+            <ul class="feature-list" aria-label="Key ReAppraise features">
+              <li>Camera and photo-library image selection</li>
+              <li>Firebase callable-function wrappers for image hints and comparable listings</li>
+              <li>Query cleaning from OCR text, labels, logos, and user details</li>
+              <li>Median-based low, high, and adjusted estimate calculations</li>
+            </ul>
             <ul class="tag-list" aria-label="Technologies">
               <li>Swift</li>
               <li>SwiftUI</li>
@@ -112,13 +109,16 @@
               <li>Swift Package Manager</li>
             </ul>
             <div class="project-actions">
-              <a class="text-link" href="#reappraise-case-study">Read Case Study</a>
+              <!-- TODO: Add ReAppraise GitHub URL when the repo is ready to share. -->
+              <!-- TODO: Add screenshots or demo video link when available. -->
+              <a class="project-button" href="#reappraise-case-study">Details</a>
+              <span class="project-button disabled" aria-disabled="true">Demo Coming Soon</span>
             </div>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="screenshot-placeholder cafe">
+          <div class="screenshot-placeholder cafe" role="img" aria-label="Dulcet and Delish cafe website screenshot placeholder">
             <span>Cafe Website Screenshot</span>
           </div>
           <div class="project-body">
@@ -126,7 +126,14 @@
               <h3>Dulcet &amp; Delish Cafe Website</h3>
               <span class="status">Complete</span>
             </div>
-            <p>A responsive static website for a local restaurant in Downtown Mooresville, NC, with menu browsing, online ordering paths, contact details, hours, and restaurant information.</p>
+            <p class="project-tagline">Responsive static website for a local cafe.</p>
+            <p>A multi-page HTML, CSS, and JavaScript site with menu content, hours, contact information, ordering paths, and local business metadata.</p>
+            <ul class="feature-list" aria-label="Key Dulcet and Delish features">
+              <li>Homepage, menu, and contact pages</li>
+              <li>Responsive navigation for desktop and mobile</li>
+              <li>Contact form, map embed, and service information</li>
+              <li>SEO, Open Graph, and JSON-LD local business metadata</li>
+            </ul>
             <ul class="tag-list" aria-label="Technologies">
               <li>HTML5</li>
               <li>CSS3</li>
@@ -134,13 +141,16 @@
               <li>Schema.org</li>
             </ul>
             <div class="project-actions">
-              <a class="text-link" href="#dulcet-delish-case-study">Read Case Study</a>
+              <!-- TODO: Add Dulcet & Delish GitHub URL when the repo is ready to share. -->
+              <!-- TODO: Add live site URL after deployment. -->
+              <a class="project-button" href="#dulcet-delish-case-study">Details</a>
+              <span class="project-button disabled" aria-disabled="true">Demo Coming Soon</span>
             </div>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="screenshot-placeholder coffee">
+          <div class="screenshot-placeholder coffee" role="img" aria-label="Local coffee app screenshot placeholder">
             <span>Coffee App Screenshot</span>
           </div>
           <div class="project-body">
@@ -148,12 +158,23 @@
               <h3>Local Coffee App</h3>
               <span class="status">In Progress</span>
             </div>
-            <p>A local coffee review app based on user reviews and a 3-bean rating system.</p>
-            <ul class="tag-list" aria-label="Technologies">
+            <p class="project-tagline">Local coffee review app concept.</p>
+            <p>An in-progress app concept for organizing cafe reviews around short notes and a simple 3-bean rating system.</p>
+            <ul class="feature-list" aria-label="Key Local Coffee App features">
+              <li>Review-first project scope</li>
+              <li>3-bean rating model</li>
+              <li>Local cafe comparison workflow</li>
+              <li>Early product structure and interface planning</li>
+            </ul>
+            <ul class="tag-list" aria-label="Project scope">
               <li>Reviews</li>
               <li>Ratings</li>
               <li>Product design</li>
             </ul>
+            <div class="project-actions">
+              <!-- TODO: Add Local Coffee App GitHub URL, screenshots, or demo link when available. -->
+              <span class="project-button disabled" aria-disabled="true">Details Coming Soon</span>
+            </div>
           </div>
         </article>
       </div>
@@ -162,24 +183,24 @@
         <div class="case-study-heading">
           <p class="eyebrow">Case Study</p>
           <h3>ReAppraise</h3>
-          <p>A mobile valuation workflow for turning an item photo into a cleaner search query, comparable listings, and a condition-adjusted price range.</p>
+          <p>A SwiftUI prototype for photo-based item valuation.</p>
         </div>
         <div class="case-study-grid">
           <section>
             <h4>Problem</h4>
-            <p>Figuring out what used items might be worth can slow down resale, donation, and cleanup decisions. ReAppraise reduces the manual research needed before deciding whether to sell, donate, or keep an item.</p>
+            <p>Used-item pricing often requires manual searches across comparable listings. ReAppraise organizes that workflow around a photo, item details, and condition selection.</p>
           </section>
           <section>
             <h4>What I Built</h4>
-            <p>I built a SwiftUI iOS prototype with photo capture, image picker integration, Firebase callable-function wrappers, category and condition controls, comparable listing display, and a median-based price estimator.</p>
+            <p>I built the SwiftUI interface, image picker flow, Firebase callable-function wrappers, category and condition controls, comparable listing display, and median-based estimator.</p>
           </section>
           <section>
             <h4>Implementation</h4>
-            <p>The app cleans OCR text, logos, labels, web entities, category hints, and user-entered details into concise search queries, then calculates low, median, and high estimates adjusted by condition multipliers.</p>
+            <p>The app cleans OCR text, labels, logos, category hints, and user input into concise search queries, then calculates low, median, and high estimates with condition multipliers.</p>
           </section>
           <section>
             <h4>Prototype Limits</h4>
-            <p>The iOS code is present, but live estimates require Firebase callable functions and real Firebase configuration. The backend source is not included, so this should be presented as a prototype rather than a deployed app.</p>
+            <p>Live estimates require Firebase callable functions and real Firebase configuration. This should be presented as a prototype, not a deployed app.</p>
           </section>
         </div>
       </article>
@@ -188,24 +209,24 @@
         <div class="case-study-heading">
           <p class="eyebrow">Case Study</p>
           <h3>Dulcet &amp; Delish Cafe Website</h3>
-          <p>A lightweight multi-page restaurant site built to make menus, hours, ordering, and contact information easy to find.</p>
+          <p>A lightweight multi-page restaurant website.</p>
         </div>
         <div class="case-study-grid">
           <section>
             <h4>Problem</h4>
-            <p>The cafe needed a clear online presence where visitors could browse current offerings, confirm hours and location details, and access online ordering without relying only on third-party listings or social media.</p>
+            <p>Restaurant visitors need fast access to menus, hours, location details, and ordering options from a clean mobile-friendly site.</p>
           </section>
           <section>
             <h4>What I Built</h4>
-            <p>I built a plain HTML, CSS, and JavaScript site with homepage, menu, and contact pages. The pages use warm branding, structured restaurant content, responsive navigation, a contact form, and embedded location directions.</p>
+            <p>I built homepage, menu, and contact pages with responsive navigation, structured restaurant content, a contact form, and embedded map directions.</p>
           </section>
           <section>
             <h4>Implementation</h4>
-            <p>The site includes semantic sections, CSS custom properties, responsive breakpoints, accessible mobile navigation, SEO meta tags, Open Graph metadata, and JSON-LD local business schema.</p>
+            <p>The site uses semantic HTML, CSS custom properties, responsive breakpoints, accessible mobile navigation, SEO metadata, and JSON-LD local business schema.</p>
           </section>
           <section>
             <h4>Future Improvements</h4>
-            <p>Next steps include adding a hosted live URL, improving mobile menu readability with zoomable or text-based menus, optimizing images, and adding more controlled contact form success and error handling.</p>
+            <p>Next steps are a hosted live URL, optimized images, more readable menu content on mobile, and improved contact form success/error handling.</p>
           </section>
         </div>
       </article>
