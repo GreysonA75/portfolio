@@ -657,6 +657,25 @@ h3 {
   font-weight: 800;
 }
 
+.contact-card .contact-email-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 42px;
+  padding: 0 16px;
+  color: var(--navy);
+  background: var(--accent);
+  border-radius: 8px;
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.contact-card .contact-email-button:hover,
+.contact-card .contact-email-button:focus-visible {
+  transform: translateY(-2px);
+  background: #45dec5;
+}
+
 .contact-card span {
   color: var(--muted);
 }
