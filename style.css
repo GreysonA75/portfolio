@@ -514,6 +514,18 @@ h3 {
   border-color: #45dec5;
 }
 
+.project-button.secondary {
+  color: var(--accent-dark);
+  background: #fff;
+  border-color: #c9d7e4;
+}
+
+.project-button.secondary:hover,
+.project-button.secondary:focus-visible {
+  background: rgba(41, 199, 172, 0.08);
+  border-color: rgba(41, 199, 172, 0.55);
+}
+
 .project-button.disabled {
   color: #667789;
   background: #f2f6f9;
