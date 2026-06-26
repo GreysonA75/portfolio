@@ -16,7 +16,6 @@ A responsive portfolio for Greyson Alegria, a Computer Science student at Appala
 
 - Project screenshots, technology stacks, and case studies
 - Technical skills
-- Education, honors, relevant coursework, and work experience
 - About and contact information
 - Links to GitHub, LinkedIn, and the hosted resume
 
