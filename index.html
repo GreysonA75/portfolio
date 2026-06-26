@@ -157,6 +157,7 @@
             </ul>
             <div class="project-actions">
               <a class="project-button" href="https://github.com/GreysonA75/Bean" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="project-button secondary" href="#bean-case-study">Details</a>
             </div>
           </div>
         </article>
@@ -210,6 +211,40 @@
           <section>
             <h4>Future Improvements</h4>
             <p>Next steps include further image optimization, more readable menu content on smaller screens, and improved contact form success and error handling.</p>
+          </section>
+        </div>
+      </article>
+
+      <article class="case-study" id="bean-case-study">
+        <div class="case-study-heading">
+          <p class="eyebrow">Case Study</p>
+          <h3>Bean</h3>
+          <p>A native iOS app for discovering independent coffee shops and matcha bars nearby.</p>
+        </div>
+        <div class="case-study-grid">
+          <section>
+            <h4>Problem</h4>
+            <p>General map searches often mix independent specialty shops with large chains and unrelated results. Bean focuses discovery on local coffee and matcha destinations.</p>
+          </section>
+          <section>
+            <h4>What I Built</h4>
+            <p>I designed and developed the SwiftUI interface, interactive MapKit search, shop filters, place details, Apple Maps directions, location sharing, favorites, and user preferences.</p>
+          </section>
+          <section>
+            <h4>Location &amp; Search</h4>
+            <p>MapKit and Core Location support current-location, address, and visible-map searches. Results are filtered and deduplicated to prioritize independent specialty shops.</p>
+          </section>
+          <section>
+            <h4>Networking</h4>
+            <p>Async/await requests retrieve live OpenStreetMap data from the Overpass API. Multiple endpoint fallbacks, Codable parsing, local caching, and loading, error, and empty states make searches more resilient.</p>
+          </section>
+          <section>
+            <h4>Persistence &amp; State</h4>
+            <p>UserDefaults and AppStorage preserve complete favorite-place records and preferences across launches, while observable shared services coordinate location permissions, search results, and map state.</p>
+          </section>
+          <section>
+            <h4>Interface Architecture</h4>
+            <p>I created reusable colors, typography, cards, animations, view modifiers, and modular components to keep the interface consistent. The app is built entirely with native Apple frameworks and has no external dependencies.</p>
           </section>
         </div>
       </article>
