@@ -3,8 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Project-focused portfolio for Greyson Alegria, a Computer Science student at Appalachian State University.">
+  <meta name="description" content="Portfolio of Greyson Alegria, a Computer Science student at Appalachian State University, featuring iOS and web development projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Greyson Alegria | Computer Science Portfolio">
+  <meta property="og:description" content="Computer Science student building iOS applications, responsive websites, and API-integrated software.">
+  <meta property="og:url" content="https://greysona75.github.io/portfolio/">
+  <meta property="og:image" content="https://greysona75.github.io/portfolio/assets/b.png">
+  <meta property="og:image:alt" content="Bean iOS application displayed on an iPhone">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Greyson Alegria | Computer Science Portfolio">
+  <meta name="twitter:description" content="Computer Science student building iOS applications, responsive websites, and API-integrated software.">
+  <meta name="twitter:image" content="https://greysona75.github.io/portfolio/assets/b.png">
   <title>Greyson Alegria | Computer Science Portfolio</title>
+  <link rel="canonical" href="https://greysona75.github.io/portfolio/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
@@ -21,6 +33,7 @@
     <nav class="site-nav" aria-label="Primary navigation">
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#background">Background</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -47,7 +60,7 @@
         </div>
         <div>
           <span class="panel-label">Focus</span>
-          <strong>Databases, APIs, UI/UX</strong>
+          <strong>Software, Systems, Web</strong>
         </div>
         <div>
           <span class="panel-label">Location</span>
@@ -71,12 +84,12 @@
               <span class="status">Prototype</span>
             </div>
             <p class="project-tagline">Photo-based resale and donation value estimator for iOS.</p>
-            <p>A SwiftUI prototype that turns an item photo into a cleaner search query, comparable listing results, and a condition-adjusted price range.</p>
+            <p>I built a SwiftUI prototype that converts an item photo and user details into comparable listings and a three-point, condition-adjusted price estimate.</p>
             <ul class="feature-list" aria-label="Key ReAppraise features">
               <li>Camera and photo-library image selection</li>
               <li>Firebase callable-function wrappers for image hints and comparable listings</li>
               <li>Query cleaning from OCR text, labels, logos, and user details</li>
-              <li>Median-based low, high, and adjusted estimate calculations</li>
+              <li>Median-based low, high, and condition-adjusted calculations</li>
             </ul>
             <ul class="tag-list" aria-label="Technologies">
               <li>Swift</li>
@@ -88,7 +101,6 @@
             <div class="project-actions">
               <a class="project-button" href="https://github.com/GreysonA75/ReAppraise" target="_blank" rel="noreferrer">GitHub</a>
               <a class="project-button" href="#reappraise-case-study">Details</a>
-              <span class="project-button disabled" aria-disabled="true">Demo Coming Soon</span>
             </div>
           </div>
         </article>
@@ -101,7 +113,7 @@
               <span class="status">Complete</span>
             </div>
             <p class="project-tagline">Responsive static website for a local cafe.</p>
-            <p>A multi-page HTML, CSS, and JavaScript site with menu content, hours, contact information, ordering paths, and local business metadata.</p>
+            <p>I designed and developed a three-page site that gives customers direct access to the cafe’s menu, hours, ordering options, contact form, and directions.</p>
             <ul class="feature-list" aria-label="Key Dulcet and Delish features">
               <li>Homepage, menu, and contact pages</li>
               <li>Responsive navigation for desktop and mobile</li>
@@ -123,26 +135,26 @@
         </article>
 
         <article class="project-card">
-          <div class="screenshot-placeholder coffee" role="img" aria-label="Local coffee app screenshot placeholder">
-            <span>Coffee App Screenshot</span>
-          </div>
+          <div class="project-screenshot bean-screenshot" role="img" aria-label="Bean iOS app home screen displayed on an iPhone"></div>
           <div class="project-body">
             <div class="project-topline">
-              <h3>Local Coffee App</h3>
+              <h3>Bean</h3>
               <span class="status">In Progress</span>
             </div>
-            <p class="project-tagline">Local coffee review app concept.</p>
-            <p>An in-progress app concept for organizing cafe reviews around short notes and a simple 3-bean rating system.</p>
-            <ul class="feature-list" aria-label="Key Local Coffee App features">
-              <li>Review-first project scope</li>
-              <li>3-bean rating model</li>
-              <li>Local cafe comparison workflow</li>
-              <li>Early product structure and interface planning</li>
+            <p class="project-tagline">Local-first coffee and matcha discovery app for iOS.</p>
+            <p>I built a SwiftUI app that queries OpenStreetMap data through the Overpass API to help users find independent coffee and matcha shops.</p>
+            <ul class="feature-list" aria-label="Key Bean features">
+              <li>Four search modes: current location, city, address, or visible map area</li>
+              <li>Map-based discovery with coffee, matcha, and specialty filters</li>
+              <li>Locally persisted favorites and preferences</li>
+              <li>Place details, directions, sharing, and amenity information</li>
             </ul>
-            <ul class="tag-list" aria-label="Project scope">
-              <li>Reviews</li>
-              <li>Ratings</li>
-              <li>Product design</li>
+            <ul class="tag-list" aria-label="Technologies">
+              <li>Swift</li>
+              <li>SwiftUI</li>
+              <li>MapKit</li>
+              <li>OpenStreetMap</li>
+              <li>Overpass API</li>
             </ul>
             <div class="project-actions">
               <a class="project-button" href="https://github.com/GreysonA75/Bean" target="_blank" rel="noreferrer">GitHub</a>
@@ -198,7 +210,7 @@
           </section>
           <section>
             <h4>Future Improvements</h4>
-            <p>Next steps are a hosted live URL, optimized images, more readable menu content on mobile, and improved contact form success/error handling.</p>
+            <p>Next steps include further image optimization, more readable menu content on smaller screens, and improved contact form success and error handling.</p>
           </section>
         </div>
       </article>
@@ -220,7 +232,7 @@
         </div>
         <div class="skill-group">
           <h3>Databases/APIs</h3>
-          <p>SQL, Firebase, Google Cloud Vision API, eBay API</p>
+          <p>SQL, Firebase, Google Cloud Vision API, eBay API, Overpass API</p>
         </div>
         <div class="skill-group">
           <h3>Tools</h3>
@@ -230,6 +242,54 @@
           <h3>Concepts</h3>
           <p>Data Structures, OOP, API Integration, Database Design, SDLC, UI/UX</p>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="background">
+      <div class="section-heading">
+        <p class="eyebrow">Background</p>
+        <h2>Education &amp; Experience</h2>
+      </div>
+      <div class="background-grid">
+        <article class="background-card">
+          <div class="background-heading">
+            <div>
+              <h3>Appalachian State University</h3>
+              <p class="background-role">B.S. in Computer Science</p>
+            </div>
+            <span>Expected May 2027</span>
+          </div>
+          <p>Current GPA: 3.48</p>
+          <p>Chancellor’s List, 2× · Dean’s List, 1×</p>
+          <h4>Relevant Coursework</h4>
+          <p>Software Engineering, Data Structures, Database Systems, Computer Systems, Programming Languages, Statistics, Linear Algebra, and Technical Communication.</p>
+        </article>
+        <article class="background-card">
+          <div class="background-heading">
+            <div>
+              <h3>Habitat for Humanity ReStore</h3>
+              <p class="background-role">Associate / Customer Care</p>
+            </div>
+            <span>Sep 2025–Present</span>
+          </div>
+          <ul class="feature-list">
+            <li>Assist customers and process, organize, and stock donated inventory.</li>
+            <li>Maintain Excel inventory records with model numbers, descriptions, quantities, and pricing.</li>
+          </ul>
+        </article>
+        <article class="background-card">
+          <div class="background-heading">
+            <div>
+              <h3>Dulcet &amp; Delish Cafe</h3>
+              <p class="background-role">Barista / Server</p>
+            </div>
+            <span>2018–Present</span>
+          </div>
+          <ul class="feature-list">
+            <li>Support customer service, POS transactions, opening and closing, food preparation, catering, and inventory restocking.</li>
+            <li>Contribute to menu design, in-house displays, and social media content.</li>
+          </ul>
+        </article>
       </div>
     </section>
 
@@ -253,8 +313,8 @@
       <div class="contact-card">
         <a class="contact-email-button" href="mailto:thegreysonj@gmail.com">Email Me</a>
         <span>thegreysonj@gmail.com</span>
-        <a href="tel:+17046547799">704-654-7799</a>
         <span>Boone, NC | Mooresville, NC</span>
+        <a href="https://greysona75.github.io/resume/" target="_blank" rel="noreferrer">View Resume / Save as PDF</a>
       </div>
     </section>
   </main>

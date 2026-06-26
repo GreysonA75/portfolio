@@ -328,6 +328,11 @@ h3 {
   background-image: url("assets/dd.jpg");
 }
 
+.bean-screenshot {
+  background-color: #f5ead8;
+  background-image: url("assets/b.png");
+}
+
 .project-body {
   display: flex;
   flex-direction: column;
@@ -533,6 +538,55 @@ h3 {
   color: #526273;
 }
 
+.background-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.background-card {
+  padding: 24px;
+  background: #f8fbfd;
+  border: 1px solid #dce5ee;
+  border-radius: 8px;
+}
+
+.background-card:first-child {
+  grid-row: span 2;
+}
+
+.background-card p {
+  margin: 10px 0 0;
+  color: #526273;
+}
+
+.background-card h4 {
+  margin: 24px 0 0;
+  color: var(--ink);
+}
+
+.background-card .feature-list {
+  margin-top: 18px;
+}
+
+.background-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.background-heading span {
+  flex: 0 0 auto;
+  color: #667789;
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.background-role {
+  font-weight: 700;
+}
+
 .split {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
@@ -643,6 +697,25 @@ h3 {
   padding: 36px 5vw;
 }
 
+.resume-card {
+  width: min(100%, 680px);
+  padding: 36px;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid #dce5ee;
+  border-radius: 8px;
+  box-shadow: 0 18px 48px rgba(18, 32, 51, 0.16);
+  text-align: center;
+}
+
+.resume-card p {
+  color: #526273;
+}
+
+.resume-card .hero-actions {
+  justify-content: center;
+}
+
 .resume-image {
   display: block;
   width: min(100%, 900px);
@@ -713,8 +786,13 @@ h3 {
 
   .project-grid,
   .skills-grid,
+  .background-grid,
   .case-study-grid {
     grid-template-columns: 1fr;
+  }
+
+  .background-card:first-child {
+    grid-row: auto;
   }
 
   .skill-group.wide {
@@ -728,6 +806,10 @@ h3 {
   .project-topline {
     display: grid;
     justify-content: stretch;
+  }
+
+  .background-heading {
+    display: grid;
   }
 
   .site-footer {
