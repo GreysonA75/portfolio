@@ -9,7 +9,7 @@
   <meta property="og:description" content="Computer Science student building iOS applications, responsive websites, and API-integrated software.">
   <meta property="og:url" content="https://greysona75.github.io/portfolio/">
   <meta property="og:image" content="https://greysona75.github.io/portfolio/assets/b.png">
-  <meta property="og:image:alt" content="Bean iOS application displayed on an iPhone">
+  <meta property="og:image:alt" content="Alegria Automation AI receptionist platform">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Greyson Alegria | Computer Science Portfolio">
   <meta name="twitter:description" content="Computer Science student building iOS applications, responsive websites, and API-integrated software.">
@@ -133,30 +133,30 @@
         </article>
 
         <article class="project-card">
-          <div class="project-screenshot bean-screenshot" role="img" aria-label="Bean iOS app home screen displayed on an iPhone"></div>
+          <div class="project-screenshot alegria-screenshot" role="img" aria-label="Alegria Automation AI receptionist platform"></div>
           <div class="project-body">
             <div class="project-topline">
-              <h3>Bean</h3>
-              <span class="status">In Progress</span>
+              <h3>Alegria Automation</h3>
+              <span class="status">Deployed</span>
             </div>
-            <p class="project-tagline">Local-first coffee and matcha discovery app for iOS.</p>
-            <p>I built a SwiftUI app that queries OpenStreetMap data through the Overpass API to help users find independent coffee and matcha shops.</p>
-            <ul class="feature-list" aria-label="Key Bean features">
-              <li>Four search modes: current location, city, address, or visible map area</li>
-              <li>Map-based discovery with coffee, matcha, and specialty filters</li>
-              <li>Locally persisted favorites and preferences</li>
-              <li>Place details, directions, sharing, and amenity information</li>
+            <p class="project-tagline">Managed AI receptionist platform built for HVAC businesses.</p>
+            <p>I built a configurable voice-receptionist system that captures service inquiries, classifies urgency, creates structured records, and supports polished follow-up workflows.</p>
+            <ul class="feature-list" aria-label="Key Alegria Automation features">
+              <li>Customizable voice agent for business-specific greetings, service areas, hours, and escalation rules</li>
+              <li>Secure webhook intake with validation, rate limits, and auditable event handling</li>
+              <li>Structured call records and retention controls using Cloudflare Workers and D1</li>
+              <li>Automated workflow foundation for confirmations, owner notifications, and scheduling follow-up</li>
             </ul>
             <ul class="tag-list" aria-label="Technologies">
-              <li>Swift</li>
-              <li>SwiftUI</li>
-              <li>MapKit</li>
-              <li>OpenStreetMap</li>
-              <li>Overpass API</li>
+              <li>TypeScript</li>
+              <li>Cloudflare Workers</li>
+              <li>Cloudflare D1</li>
+              <li>Retell AI</li>
+              <li>n8n</li>
             </ul>
             <div class="project-actions">
-              <a class="project-button" href="https://github.com/GreysonA75/Bean" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="project-button secondary" href="#bean-case-study">Details</a>
+              <a class="project-button" href="https://alegria-automation.thegreysonj.chatgpt.site/" target="_blank" rel="noreferrer">Live Site</a>
+              <a class="project-button secondary" href="#alegria-automation-case-study">Details</a>
             </div>
           </div>
         </article>
@@ -214,36 +214,36 @@
         </div>
       </article>
 
-      <article class="case-study" id="bean-case-study">
+      <article class="case-study" id="alegria-automation-case-study">
         <div class="case-study-heading">
           <p class="eyebrow">Case Study</p>
-          <h3>Bean</h3>
-          <p>A native iOS app for discovering independent coffee shops and matcha bars nearby.</p>
+          <h3>Alegria Automation</h3>
+          <p>An AI receptionist platform designed for HVAC businesses that need reliable after-hours and overflow call handling.</p>
         </div>
         <div class="case-study-grid">
           <section>
             <h4>Problem</h4>
-            <p>General map searches often mix independent specialty shops with large chains and unrelated results. Bean focuses discovery on local coffee and matcha destinations.</p>
+            <p>Service businesses can lose leads when calls arrive during busy jobs, after hours, or when staff are unavailable to answer. The system provides a consistent, professional first response while keeping the business in control.</p>
           </section>
           <section>
             <h4>What I Built</h4>
-            <p>I designed and developed the SwiftUI interface, interactive MapKit search, shop filters, place details, Apple Maps directions, location sharing, favorites, and user preferences.</p>
+            <p>I built a reusable AI receptionist architecture that can be configured per client with its business details, service categories, hours, urgency rules, and handoff preferences.</p>
           </section>
           <section>
-            <h4>Location &amp; Search</h4>
-            <p>MapKit and Core Location support current-location, address, and visible-map searches. Results are filtered and deduplicated to prioritize independent specialty shops.</p>
+            <h4>Voice &amp; Intake</h4>
+            <p>Retell AI handles natural phone conversations and sends completed-call data into a protected TypeScript webhook. The intake layer validates requests, blocks unsafe traffic, and normalizes records before processing.</p>
           </section>
           <section>
-            <h4>Networking</h4>
-            <p>Async/await requests retrieve live OpenStreetMap data from the Overpass API. Multiple endpoint fallbacks, Codable parsing, local caching, and loading, error, and empty states make searches more resilient.</p>
+            <h4>Operations</h4>
+            <p>Cloudflare Workers and D1 provide a lightweight serverless foundation for structured call records, controlled data retention, and client-specific operational workflows.</p>
           </section>
           <section>
-            <h4>Persistence &amp; State</h4>
-            <p>UserDefaults and AppStorage preserve complete favorite-place records and preferences across launches, while observable shared services coordinate location permissions, search results, and map state.</p>
+            <h4>Automation</h4>
+            <p>n8n is used to coordinate downstream actions such as text confirmations, owner notifications, lead routing, and spreadsheet or CRM updates without tying the core intake layer to one provider.</p>
           </section>
           <section>
-            <h4>Interface Architecture</h4>
-            <p>I created reusable colors, typography, cards, animations, view modifiers, and modular components to keep the interface consistent. The app is built entirely with native Apple frameworks and has no external dependencies.</p>
+            <h4>Security &amp; Reliability</h4>
+            <p>The platform uses feature gates, environment-separated configuration, request verification, rate limiting, and documented deployment controls so integrations can be enabled deliberately as each client is onboarded.</p>
           </section>
         </div>
       </article>
