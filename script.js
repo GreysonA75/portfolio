@@ -30,9 +30,9 @@ window.matchMedia('(min-width: 641px)').addEventListener('change', event => {
 });
 
 const captions = {
-  applications: 'Thoughtful interfaces. Useful software.',
-  integration: 'Connect the pieces. Keep the boundaries clear.',
-  automation: 'Less repetitive work. More room for useful work.'
+  applications: 'Web and mobile application development.',
+  integration: 'API integration and webhook handling.',
+  automation: 'Python and workflow automation.'
 };
 const visual = document.querySelector('.systems-visual');
 visual?.querySelectorAll('[data-layer]').forEach(button => {
