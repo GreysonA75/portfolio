@@ -1,0 +1,13 @@
+{
+  "name": "greyson-alegria-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check script.js && node --check scripts/build.mjs && python3 scripts/check_site.py",
+    "build": "npm run check && node scripts/build.mjs",
+    "preview": "python3 -m http.server 4173 --bind 127.0.0.1 --directory dist",
+    "dev": "python3 -m http.server 4173 --bind 127.0.0.1"
+  },
+  "engines": { "node": ">=18" }
+}

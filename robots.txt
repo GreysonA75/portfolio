@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://greysona75.github.io/portfolio/sitemap.xml
